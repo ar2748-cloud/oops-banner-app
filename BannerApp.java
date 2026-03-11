@@ -1,24 +1,23 @@
+import java.util.HashMap;
+import java.util.Map;
+
 public class BannerApp {
 
     public static void main(String[] args) {
 
-        Banner banner = new Banner();
-        banner.printBanner();
+        Map<Integer, String> banner = new HashMap<>();
 
-    }
+        banner.put(1, " *****   *****   ******   ***** ");
+        banner.put(2, "*     * *     *  *     * *     *");
+        banner.put(3, "*     * *     *  *     * *");
+        banner.put(4, "*     * *     *  ******   ***** ");
+        banner.put(5, "*     * *     *  *             *");
+        banner.put(6, "*     * *     *  *       *     *");
+        banner.put(7, " *****   *****   *        ***** ");
 
-    static class Banner {
-
-        public void printBanner() {
-
-            System.out.println(" *****   *****   ******   ***** ");
-            System.out.println("*     * *     *  *     * *     *");
-            System.out.println("*     * *     *  *     * *");
-            System.out.println("*     * *     *  ******   ***** ");
-            System.out.println("*     * *     *  *             *");
-            System.out.println("*     * *     *  *       *     *");
-            System.out.println(" *****   *****   *        ***** ");
-
+        for(int i = 1; i <= banner.size(); i++) {
+            System.out.println(banner.get(i));
         }
+
     }
 }
