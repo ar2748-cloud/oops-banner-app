@@ -2,23 +2,42 @@ public class BannerApp {
 
     public static void main(String[] args) {
 
-        String[][] banner = {
-            {" ***** ", " ***** ", " ****** ", " ***** "},
-            {"*     *", "*     *", "*     *", "*     *"},
-            {"*     *", "*     *", "*     *", "*"},
-            {"*     *", "*     *", "******", " ***** "},
-            {"*     *", "*     *", "*", "*"},
-            {"*     *", "*     *", "*", "*     *"},
-            {" ***** ", " ***** ", "*", " ***** "}
-        };
+        printLine1();
+        printLine2();
+        printLine3();
+        printLine4();
+        printLine5();
+        printLine6();
+        printLine7();
 
-        for (int i = 0; i < banner.length; i++) {
-
-            for (int j = 0; j < banner[i].length; j++) {
-                System.out.print(banner[i][j] + " ");
-            }
-
-            System.out.println();
-        }
     }
+
+    public static void printLine1() {
+        System.out.println(" *****   *****   ******   ***** ");
+    }
+
+    public static void printLine2() {
+        System.out.println("*     * *     *  *     * *     *");
+    }
+
+    public static void printLine3() {
+        System.out.println("*     * *     *  *     * *");
+    }
+
+    public static void printLine4() {
+        System.out.println("*     * *     *  ******   *****");
+    }
+
+    public static void printLine5() {
+        System.out.println("*     * *     *  *             *");
+    }
+
+    public static void printLine6() {
+        System.out.println("*     * *     *  *       *     *");
+    }
+
+    public static void printLine7() {
+        System.out.println(" *****   *****   *        ***** ");
+    }
+
 }
